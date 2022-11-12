@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+body {
+    background: rgb(167, 167, 167);
+}
+.encabezado{
+    background: url(./header2.png);
+    padding: 20px 30px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+.logo_panda_black{
+    width: 150px;
+}
+
+header nav{
+    padding: 20px;
+}
+header nav ul {
+    margin-top: 30px;
+    display: flex;
+    background: white;
+    padding: 20PX;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+header nav ul li {
+    text-decoration: none;
+    list-style-type: none;
+}
+.down_li {
+    margin-left: 20px;
+}
+header nav ul li a{
+    padding: 20px;
+    text-decoration: none;
+    color: black;
+    margin-left: 0px 20;
+    border-right: 1px solid black;
+    
+}
+
+header nav ul li a:hover{
+    background-color: rgb(196, 180, 180);
+}
+header nav ul li a i{
+    margin-right: 5px;
+}
+.redes a i{
+    color:black;
+    font-size: 30px;
+    padding: 10px;
+    margin-top: 53px;
+}
+
+ @media screen and (max-width: 800px){
+    .navegador nav ul{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    background: rgb(0, 0, 0);
+    padding: 20px 0px;
+    }
+    
+    .navegador nav ul li{
+        margin: 10px 0;
+        border-bottom: 1px solid white;
+    }
+    .navegador nav ul li a{
+        font-size: 14px;
+        color: white;
+    }
+
+    .logo_panda_black{
+        margin-top: 100px;
+        text-align: center;
+        width: 130px;
+    }
+    .down_li {
+        margin-left: 20px;
+        color: white;
+        font-size: 30px;
+        text-align: center;
+    }
+    .redes{
+        display: none;
+    }
+    .encabezado{ 
+        background-image: url(./header_respons.png);
+        padding: 20px 30px;
+        display: flex;
+        flex-flow: row wrap;
+        border-bottom: none
+    }
+} 

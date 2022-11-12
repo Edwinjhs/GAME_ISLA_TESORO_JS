@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WELCOME</title>
+    <link rel="stylesheet" href="./fontawesome-free-6.2.0-web/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crete+Round&family=Island+Moments&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="./body_tesoro.css">
+    <link rel="stylesheet" href="./footer.css">
+</head>
+<body>
+
+<!-- @@@@@@@@@@@@@@@@@@ HEADER @@@@@@@@@@@@@@@ -->
+
+    <header class="encabezado">
+        <div class="logo_encabezado">
+            <img class="logo_panda_black"  src="./panda-2.svg" alt="imagen de panda logo">
+        </div>
+        <div class="navegador" id="navegador">
+            <nav>
+                <ul>
+                    <li><a href=""><i class="fa-solid fa-house-chimney"></i>INICIO</a></li>
+                    <li><a href=""><i class="fa-solid fa-gamepad"></i>MAS JUEGOS</a></li>
+                    <li><a class="contacto_a" href=""><i class="fa-solid fa-address-card"></i>CONTACTO</a></li>
+                    <li class="down_li"><i class="fa-solid fa-circle-down"></i></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="redes">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+        </div>
+    </header>
+
+<!-- @@@@@@@@@@@@@@@@ BODY TESORO @@@@@@@@@@@@@@@@@@ -->
+
+
+    <section class="body_tesoro">
+        <div><img class="imagen_isla" src="./isla_imagen.jpeg" alt="imagen isla del tesoro"></div>
+       
+       
+        <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@ CICLOOOOOOOOS DE SENTENCIAS @@@@@@@@@@@@@@@@@@@@@@@ -->
+        <div class="contenido_texto">
+            <div class="pregunta_1" id="pregunta1">
+                <h1 class="titulo_it">Bienvenido al Mapa del tesoro</h1>
+                <h2 class="sucedido">A continuacion se te presentaran una serie de decisiones las cuales te llevaran al tesoro</h2>
+                <p class="pregunta">Hay dos caminos, cual escoges: ¿derecha o izquierda?</p>
+                <img src="./direcciones.svg" alt="direcciones" class="imagen_de_pregunta">
+                <div class="boton_preguntas">
+                    <button class="btn_right" type="button" onclick="izquierda1()">IZQUIERDA</button>
+                    <button class="btn_left" type="button" onclick="derecha1()">DERECHA</button>
+                </div>
+            </div>
+
+            <div class="pregunta2der" id="pregunta2der">
+                <h1 class="titulo_it">NIVEL 2</h1>
+                <h2 class="sucedido">Tienes mucha hambre y encontraste un nido de avestruces, alli hay 3 huevos, debes escoger uno de ellos</h2>
+                <p class="pregunta">¿cual abres?(amarillo, azul, blanco)</p>
+                <div class="boton_preguntas">
+                    <button class="btn_amarillo"  type="button" onclick="amarillo2der()">AMARILLO</button>
+                    <button class="btn_azul" type="button" onclick="azul2der()">AZUL</button>
+                    <button class="btn_blanco" type="button" onclick="blanco2der()">BLANCO</button>
+                </div>
+            </div>
+
+            <div class="pregunta3der" id="pregunta3der">
+                <h1 class="titulo_it">NIVEL 2</h1>
+                <h2 class="sucedido">Caiste sobre un nido de avestruces y hay 3 huevos, tienes mucha hambre y debes escoger uno de ellos para comer</h2>
+                <p class="pregunta">¿cual abres?(amarillo, azul, blanco)</p>
+                <div class="boton_preguntas">
+                    <button class="btn_amarillo"  type="button" onclick="amarillo2der()">AMARILLO</button>
+                    <button class="btn_azul" type="button" onclick="azul2der()">AZUL</button>
+                    <button class="btn_blanco" type="button" onclick="blanco2der()">BLANCO</button>
+                </div>
+            </div>
+
+<!-- @@@@@@@@@@@@@@@@@@@ RESPUESTAS HUEVO  AVESTRUZ  @@@@@@@@@@@@@@@@@@ -->
+
+            <div class="huevoamarillo" id="pregunta3ama">
+                <h1 class="titulo_it">NIVEL 3</h1>
+                <h2 class="sucedido">Felicitaciones, obtuviste mucha energia para seguir tu camino, Se abrio un portal que te llevo directo al tesoro perdido, pero deberas atravesar uno de los dos lagos uno tiene tiburones y el otro anguilas electricas</h2>
+                <p class="pregunta">¿Cual atraviesas?</p>
+                <div class="boton_preguntas">
+                    <button class="btn_tiburones"  type="button" onclick="tiburones()">TIBURONES</button>
+                    <button class="btn_anguilas" type="button" onclick="anguilas()">ANGUILAS</button>
+                </div>
+            </div>
+
+                <!-- respuesta de tiburones o anguila -->
+
+                <div class="tiburon1" id="pregunta4tib">
+                    <h1 class="titulo_it">NIVEL 4</h1>
+                    <h2 class="sucedido">Felicitaciones obtuviste el cofre, eran tiburones gatos que son inofensivos</h2>
+                    <p class="pregunta">WINNER</p>
+                    <div class="boton_preguntas">
+                        <a href="index.html"><button class="btn_win"  type="button" onclick="WIN()">¿Quieres jugar de nuevo?</button></a>
+                    </div>
+                </div>
+
+                <div class="anguila1" id="pregunta4ang">
+                    <h1 class="titulo_it">NIVEL 4</h1>
+                    <h2 class="sucedido">Mala suerte, las anguilas te electrocutaron.</h2>
+                    <p class="pregunta">GAME OVER</p>
+                    <div class="boton_preguntas">
+                        <a href="./index.html"><button class="btn_g_o"  type="button" onclick="game_over()">¿Quieres juegar de nuevo?</button></a>
+                    </div>
+                </div>
+<!-- @@@@ END huevo amarillo de aveztrus @@@@ -->
+
+            <div class="huevoazul" id="pregunta3azu">
+                <h1 class="titulo_it">NIVEL 2</h1>
+                <h2 class="sucedido">El huevo que conseguiste estaba dañado, aun asi podras continuar solo que no avanzaste de nivel, Ahora se abrio un portal que te llevo a una laguna, la unica forma de continuar seria nadando o podriamos esperar que llegara alguien con un bote ¿que te gustaria hacer?</h2>
+                <p class="pregunta">¿nadar o esperar?</p>
+                <div class="boton_preguntas">
+                    <button class="btn_nado" type="button" onclick="nado1()">NADAR</button>
+                    <button class="btn_espero" type="button" onclick="espero1()">ESPERAR</button>
+                </div>
+            </div>
+<!-- @@@@ huevo azul end  -->
+
+            <div class="huevoblanco" id="pregunta3bla">
+                <h1 class="titulo_it">NIVEL 3</h1>
+                <h2 class="sucedido">Mala suerte, habia un bebe avestruz y te comio</h2>
+                <p class="pregunta">GAME OVER</p>
+                <div class="boton_preguntas">
+                    <a href="./index.html"><button class="btn_g_o"  type="button" onclick="game_over()">¿Quieres juegar de nuevo?</button></a>
+                </div>
+            </div>
+<!-- @@@@@@@@@@@@@@@@@@ HUEVO BLANCO END @@@@@@@@@@@@@ -->
+
+            <div class="pregunta2izq" id="pregunta2izq">
+                <h1 class="titulo_it">NIVEL 2</h1>
+                <h2 class="sucedido">Te haz encontrado con una laguna, la unica forma de continuar seria nadando o podriamos esperar que llegara alguien con un bote ¿que te gustaria hacer?</h2>
+                <p class="pregunta">¿nadar o esperar?</p>
+                <div class="boton_preguntas">
+                    <button class="btn_nado" type="button" onclick="nado1()">NADAR</button>
+                    <button class="btn_espero" type="button" onclick="espero1()">ESPERAR</button>
+                </div>
+            </div>
+
+            <div class="nadar1" id="pregunta4nad">
+                <h1 class="titulo_it">NIVEL 3</h1>
+                <h2 class="sucedido">Felicitaciones, lograste llegar al otro lado y ahora encontraste 3 puertas de piedra de diferentes colores, solo podras abrir una</h2>
+                <p class="pregunta">¿Cual puerta abres?</p>
+                <div class="boton_preguntas">
+                    <button class="btn_nado" type="button" onclick="roja3()">ROJA</button>
+                    <button class="btn_espero" type="button" onclick="azul3()">AZUL</button>
+                    <button class="btn_espero" type="button" onclick="verde3()">VERDE</button>
+                </div>
+            </div>
+
+            <div class="puertaroja" id="pregunta4pro">
+                <h1 class="titulo_it">NIVEL 4</h1>
+                <h2 class="sucedido">Llegaste a una cueva llena de lava volcanica, te quemaste</h2>
+                <p class="pregunta">GAME OVER</p>
+                <div class="boton_preguntas">
+                    <a href="./index.html"><button class="btn_g_o"  type="button" onclick="game_over()">¿Quieres juegar de nuevo?</button></a>
+                </div>
+            </div>
+
+            <div class="puertaazul" id="pregunta4paz">
+                <h1 class="titulo_it">NIVEL 4</h1>
+                <h2 class="sucedido">llegaste a una cueva repleta de cocodrilos, murcielagos, arañas venenosas y plantas carnivoras, te comieron.</h2>
+                <p class="pregunta">GAME OVER</p>
+                <div class="boton_preguntas">
+                    <a href="./index.html"><button class="btn_g_o"  type="button" onclick="game_over()">¿Quieres juegar de nuevo?</button></a>
+                </div>
+            </div>
+
+            <div class="puertaverde" id="pregunta4pver">
+                <h1 class="titulo_it">NIVEL 4</h1>
+                <h2 class="sucedido">Felicitaciones, llegaste directo al tesoro perdido, se encuentra encima de una palmera de la familia Arecaceae</h2>
+                <p class="pregunta">¿escalas la palmera o mueves la palmera hasta que caiga el tesoro??</p>
+                <div class="boton_preguntas">
+                    <button class="btn_nado" type="button" onclick="escalar1()">ESCALARLA</button>
+                    <button class="btn_espero" type="button" onclick="moverla1()">MOVERLA</button>
+                </div>
+            </div>
+
+            <div class="moverla1" id="pregunta6mov">
+                <h1 class="titulo_it">NIVEL 5</h1>
+                <h2 class="sucedido">Mala suerte, el tesoro te cayo encima y te aplasto</h2>
+                <p class="pregunta">GAME OVER</p>
+                <div class="boton_preguntas">
+                    <a href="./index.html"><button class="btn_g_o"  type="button" onclick="game_over()">¿Quieres juegar de nuevo?</button></a>
+                </div>
+            </div>
+
+            <div class="escalar1" id="pregunta6esca">
+                <h1 class="titulo_it">NIVEL 5</h1>
+                <h2 class="sucedido">Felicitaciones, Obtuviste el cofre, Tienes mucha suerte, intenta otro camino.</h2>
+                <p class="pregunta">WINNER</p>
+                <div class="boton_preguntas">
+                    <a href="index.html"><button class="btn_win"  type="button" onclick="WIN()">¿Quieres jugar de nuevo?</button></a>
+                </div>
+            </div>
+
+            <div class="esperar1" id="pregunta4espe">
+                <h1 class="titulo_it">NIVEL 3</h1>
+                <h2 class="sucedido">Lo siento, por mala suerte hubo un huracan y te aplasto un arbol</h2>
+                <p class="pregunta">GAME OVER</p>
+                <div class="boton_preguntas">
+                    <a href="./index.html"><button class="btn_g_o"  type="button" onclick="game_over()">¿Quieres juegar de nuevo?</button></a>
+                </div>
+            </div>
+
+            <!-- @@@@@@@@@@@@@@@@@@@@@@ FIN DE CICLOS DE SENTENCIAS @@@@@@@@@@@@@@@@@@@-->
+            
+            <a href="index.html"><i class="fa-solid fa-house"></i>Volver a inicio</a>
+        </div>
+
+    </section>
+    <footer class="footer_1">
+        <h5 class="all_reserved">&copy;Todos los derechos reservados 2022</h5>
+        <div class="redes_footer">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

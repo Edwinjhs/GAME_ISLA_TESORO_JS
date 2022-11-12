@@ -1,0 +1,28 @@
+.footer_1{
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid white;
+    background-color: brown;
+    padding: 20px;
+    font-size: 20px;
+}
+.redes_footer{
+    display: none;
+}
+.redes_footer a{
+    color: black;
+    padding: 1px;
+}
+
+@media screen and (max-width: 800px){
+    .footer_1{
+        display: flex;
+        justify-content: space-between;
+        font-size: 16px;
+    }
+    .redes_footer{
+        display: block;
+        font-size: 18px;
+    }
+
+}
